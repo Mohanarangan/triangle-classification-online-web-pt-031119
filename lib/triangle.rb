@@ -20,7 +20,6 @@ class Triangle
   end
   
 
-  
   def validate_triangle 
     triangle = [(x+y > z),(x+z > y), (y+z >x)]
     [x,y,z].each { |s| triangle << false if s <= 0 }
